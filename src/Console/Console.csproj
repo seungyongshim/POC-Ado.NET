@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\seungyongshim\.nuget\packages\linq2db.sqlserver\3.4.2\contentFiles\any\any\LinqToDB.Templates\CopyMe.SqlServer.tt.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="linq2db.SqlServer" Version="3.4.2" />
+    <PackageReference Include="linq2db.t4models" Version="3.4.2" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="DataModels\SqlServer.tt">
+      <Generator>TextTemplatingFileGenerator </Generator>
+    </None>
+  </ItemGroup>
+
+</Project>
