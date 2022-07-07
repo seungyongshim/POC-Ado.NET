@@ -10,7 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="linq2db.SqlServer" Version="3.4.2" />
+    <PackageReference Include="linq2db.SqlServer" Version="4.1.1" />
     <PackageReference Include="linq2db.t4models" Version="3.4.2" />
     <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
   </ItemGroup>
